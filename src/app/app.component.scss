@@ -1,0 +1,9 @@
+@import '../variables.scss';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $primary-color;
+  overflow: auto;
+}

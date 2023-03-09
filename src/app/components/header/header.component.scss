@@ -1,0 +1,52 @@
+@import '../../../variables.scss';
+
+:host {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 58px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $secondary-color;
+  box-shadow: 0px 0px 6px 0px rgba($color: #000000, $alpha: 0.2);
+}
+
+h1 {
+  margin: 0;
+  margin-left: 22px;
+  padding: 0;
+  color: #ffffffb3;
+  font-family: 'Courier Prime', monospace;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+button {
+  display: flex;
+  height: 100%;
+  width: 130px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #00000055;
+  color: #d1d5dbdf;
+  transition: 0.4s;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+
+  &:hover {
+    background-color: #00000081;
+    color: #d1d5db;
+  }
+}
+
+button + button {
+  border-left: 1px solid #d1d5db24;
+}
