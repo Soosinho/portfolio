@@ -3,7 +3,77 @@
 :host {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background-color: $primary-color;
   overflow: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 58px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $secondary-color;
+  box-shadow: 0px 0px 6px 0px rgba($color: #000000, $alpha: 0.2);
+  padding-inline: 32px;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+
+  h1 {
+    margin: 0;
+    color: #ffffffb3;
+    font-family: "Robot", sans-serif;
+    font-size: 28px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  button {
+    display: flex;
+    height: 100%;
+    width: 130px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #00000055;
+    color: #dedede;
+    transition: 0.3s;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-inline: 2px;
+
+    &:hover {
+      background-color: #00000081;
+      color: #f0f0f0;
+      transform: scale(1.1);
+      margin-inline: 8px;
+    }
+  }
+}
+
+.language {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+
+  .mat-icon {
+    color: #ffffffb3;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover {
+      color: #ffffffe0;
+    }
+  }
 }

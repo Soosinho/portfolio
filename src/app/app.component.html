@@ -1,3 +1,21 @@
-<app-header></app-header>
+<section class="header">
+  <div class="title">
+    <h1>Portfolio</h1>
+  </div>
+  
+  <div class="buttons">
+    <button>{{'about_me' | translate}}</button>
+  
+    <button>{{'skills' | translate}}</button>
+  
+    <button>{{'projects' | translate}}</button>
+  
+    <button>{{'contact' | translate}}</button>
+  </div>
+  
+  <div class="language">
+    <mat-icon (click)="changeLanguage()">language</mat-icon>
+  </div>
+</section>
 
 <app-introduction></app-introduction>
